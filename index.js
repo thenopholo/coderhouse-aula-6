@@ -7,7 +7,7 @@ let meses = parseInt(prompt('Em quantos meses deseja pagar?'));
 // let meses = 11;
 
 function cauculoEmprestimo(captial, meses) {
-    let valorParcela = (captial / meses) * 1000;
+    let valorParcela = (captial / meses);
     for (let i = 1; i <= meses; i++) {
         console.log("O valor da parcela do", i, "º mês é de R$", valorParcela.toFixed(2), "reais.");
     }
